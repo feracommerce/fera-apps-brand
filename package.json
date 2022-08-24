@@ -12,7 +12,7 @@
     "dev:css": "yarn build:css --watch",
     "build:js": "esbuild js/index.js --bundle --sourcemap --outdir=dist --public-path=assets",
     "dev:js": "yarn build:js --watch",
-    "build": "yarn build:css && yarn build:js"
+    "build": "yarn build:css && yarn build:js && cp -rpf fonts dist"
   },
   "files": [
     "js/{src,dist}/**/*.{js,map}",

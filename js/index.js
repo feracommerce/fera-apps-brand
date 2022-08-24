@@ -1,1 +1,1 @@
-import * as feraApps from "./fera/apps";
+import * as bootstrap from "bootstrap";

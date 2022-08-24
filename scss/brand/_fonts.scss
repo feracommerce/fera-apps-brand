@@ -1,0 +1,64 @@
+$proxima-font-path: "fonts/proxima_nova";
+
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("#{ $proxima-font-path }/ProximaNova-Black.otf") format("opentype");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("#{ $proxima-font-path }/ProximaNova-Bold.otf") format("opentype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("#{ $proxima-font-path }/ProximaNova-BoldIt.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("#{ $proxima-font-path }/ProximaNova-Extrabold.otf") format("opentype");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("#{ $proxima-font-path }/ProximaNova-Light.otf") format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("#{ $proxima-font-path }/ProximaNova-LightItalic.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("#{ $proxima-font-path }/ProximaNova-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("#{ $proxima-font-path }/ProximaNova-RegularItalic.otf") format("opentype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("#{ $proxima-font-path }/ProximaNova-Semibold.otf") format("opentype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("#{ $proxima-font-path }/ProximaNova-Semibold.otf") format("opentype");
+    font-weight: 600;
+    font-style: italic;
+}
