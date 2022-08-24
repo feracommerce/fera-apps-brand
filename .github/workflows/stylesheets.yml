@@ -1,0 +1,14 @@
+name: Stylesheet (CSS) Checks
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install Apps
+        run: npm install stylelint stylelint-config-standard-scss -g
+      - name: Lint
+        run: stylelint --no-color --allow-empty-input --config=./.stylelint/config.json scss/**/*.scss
+

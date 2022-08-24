@@ -1,0 +1,19 @@
+name: JS Checks
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: |
+          npm install -g jshint
+          npm install -g eslint
+      - name: Run JS Hint
+        run: jshint --verbose js --config .jshint/config.json
+      - name: Run ESLint
+        run: eslint js
+

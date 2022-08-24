@@ -1,0 +1,8 @@
+node_modules
+scss/__readme.md
+scss/**/*.min.css
+scss/lib/legacy/**/*
+scss/lib/theme/components/plugins/**/*
+scss/lib/theme/_variables.scss
+scss/lib/theme/_variables-dark.scss
+scss/fera/brand/**/*
