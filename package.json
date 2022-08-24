@@ -1,15 +1,23 @@
 {
   "name": "fera-apps-brand",
   "private": false,
-  "peerDependencies": {
-    "@popperjs/core": "^2.11.5",
-    "bootstrap": "^5.2.0",
-    "bootstrap-icons": "^1.9.1",
-    "sass": "^1.54.0"
+  "dependencies": {
+    "@popperjs/core": "^2.11",
+    "bootstrap": "^5.2",
+    "bootstrap-icons": "^1.9",
+    "sass": "^1.54"
+  },
+  "scripts": {
+    "build:css": "sass ./scss/index.scss:./dist/index.css --no-source-map --load-path=node_modules",
+    "dev:css": "yarn build:css --watch",
+    "build:js": "esbuild js/index.js --bundle --sourcemap --outdir=dist --public-path=assets",
+    "dev:js": "yarn build:js --watch",
+    "build": "yarn build:css && yarn build:js"
   },
   "files": [
     "js/{src,dist}/**/*.{js,map}",
-    "scss/**/*.scss"
+    "scss/**/*.scss",
+    "fonts/**/*.otf"
   ],
   "version": "0.1.0",
   "description": "Fera Rails app brand assets and boilerplate design files.",
@@ -17,9 +25,9 @@
   "author": "Fera Commerce Inc",
   "license": "MIT",
   "devDependencies": {
-    "sass": "^1.54.5",
-    "sass-loader": "^13.0.2",
-    "webpack": "^5.74.0",
-    "esbuild": "^0.14.51"
+    "sass": "^1.54",
+    "sass-loader": "^13.0",
+    "webpack": "^5.74",
+    "esbuild": "^0.14"
   }
 }

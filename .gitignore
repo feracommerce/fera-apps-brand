@@ -104,3 +104,6 @@ app/assets/builds
 
 # Rubocop cache
 .rubocop-http*
+
+# Dist files
+dist/
