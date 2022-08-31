@@ -64,4 +64,7 @@
 // Fera shared libraries
 @import "bootstrap-icons/font/bootstrap-icons";
 @import "./brand/overrides/buttons";
-@import "./apps/header";
+
+// For Fera apps:
+@import "./apps";
+

@@ -1,0 +1,27 @@
+.fera-app-content {
+    > .lead {
+        text-align: center;
+    }
+
+    > .card {
+        margin-bottom: 1.5rem;
+
+        > .card-body {
+            padding: 2rem;
+        }
+    }
+
+    .steps {
+        .step {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+
+            &--inactive,
+            &--next,
+            &--last {
+                opacity: 0.6;
+            }
+        }
+    }
+}

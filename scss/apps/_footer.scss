@@ -1,0 +1,18 @@
+.fera-app-footer {
+    text-align: center;
+
+    .bottomAppNav {
+        margin-top: 2rem;
+    }
+
+    .copyrightAndLinks {
+        --bs-text-opacity: 1;
+
+        color: #6C757D;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+        border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+        font-size: 80%;
+    }
+}

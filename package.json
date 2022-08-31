@@ -12,7 +12,8 @@
     "dev:css": "yarn build:css --watch",
     "build:js": "esbuild js/index.js --bundle --sourcemap --outdir=dist --public-path=assets",
     "dev:js": "yarn build:js --watch",
-    "build": "yarn build:css && yarn build:js && cp -rpf fonts dist"
+    "build": "yarn build:css && yarn build:js && cp -rpf fonts dist",
+    "lint": "eslint --format unix js && stylelint --allow-empty-input --config=./.stylelint/config.json scss/**/* && jshint --verbose --config .jshint/config.json js"
   },
   "files": [
     "js/{src,dist}/**/*.{js,map}",
@@ -25,6 +26,10 @@
   "author": "Fera Commerce Inc",
   "license": "MIT",
   "devDependencies": {
+    "jshint": "2.13.5",
+    "stylelint": "14.9.1",
+    "stylelint-config-standard-scss": "5.0.0",
+    "eslint": "8.21.0",
     "sass": "^1.54",
     "sass-loader": "^13.0",
     "webpack": "^5.74",

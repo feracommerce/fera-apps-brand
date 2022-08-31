@@ -6,3 +6,11 @@
 Include this package with your Fera App to use standardized Fera branding.
 
 Build to be used with [Fera Rails App Template](https://github.com/feracommerce/fera-app-template).
+
+
+# Lint
+Run `yarn lint` to run linters
+
+
+# Build
+Run `yarn build` to build the dist files
