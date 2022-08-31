@@ -20,7 +20,7 @@
     "scss/**/*.scss",
     "fonts/**/*.otf"
   ],
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fera Rails app brand assets and boilerplate design files.",
   "repository": "https://github.com/feracommerce/fera-apps-brand",
   "author": "Fera Commerce Inc",
